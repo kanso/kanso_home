@@ -1,0 +1,40 @@
+{
+    "name": "kanso_home",
+    "version": "0.0.1",
+    "description": "CouchApp for kanso homepage",
+    "load": "lib/app",
+    "modules": "lib",
+    "attachments": "static",
+    "handlebars": {
+        "templates": "templates"
+    },
+    "duality": {
+        "base_template": "base.html"
+    },
+    "less": {
+        "compress": true,
+        "compile": "static/css/home.less",
+        "remove_from_attachments": true
+    },
+    "duality-contrib-session": {
+        "signup": {
+            "text": "Create account",
+            "url": "/create_account/"
+        }
+    },
+    "dependencies": {
+        "modules": null,
+        "properties": null,
+        "attachments": null,
+        "settings": null,
+        "duality": null,
+        "handlebars": null,
+        "handlebars-helpers": null,
+        "duality-handlebars": null,
+        "less-precompiler": ">=1.1.5",
+        "duality-contrib-session-hb": null,
+        "couchtypes": null,
+        "gravatar": null,
+        "users": null
+    }
+}
