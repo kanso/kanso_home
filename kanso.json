@@ -32,9 +32,6 @@
         "handlebars-helpers": null,
         "duality-handlebars": null,
         "less-precompiler": ">=1.1.5",
-        "duality-contrib-session-hb": null,
-        "couchtypes": null,
-        "gravatar": null,
-        "users": null
+        "duality-contrib-session-hb": null
     }
 }
