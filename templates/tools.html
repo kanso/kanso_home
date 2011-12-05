@@ -1,0 +1,123 @@
+<div id="secondbar">
+  <div class="container">
+    <div class="row">
+      <div class="span10">
+        <h1>Kanso Tools</h1>
+        <p>
+          Instructions on getting up and running with Kanso's command-line tools
+        </p>
+      </div>
+      <div class="span6">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="content">
+    <div class="row">
+
+      <div class="span12">
+        <div class="row">
+          <div class="span3 screenshot">
+            <img src="{{baseURL}}/static/img/couchdb.org.png" alt="couchdb.org" />
+          </div>
+          <div class="span9">
+            <h2>CouchDB</h2>
+            <p>
+              Since Kanso apps run on CouchDB, you'll need to have CouchDB installed.
+              It is <strong>strongly recommended</strong> you have at least CouchDB
+              v1.1. There were significant improvements introduced in that release
+              for Kanso apps, and many packages will not even work on earlier versions.
+            </p>
+            <p>
+              Get CouchDB at <a href="http://couchdb.org">couchdb.org</a>
+            </p>
+            <p>
+              <strong>Note:</strong> Couchbase Single Server 1.1 is
+              <strong>not</strong> based on Apache CouchDB v1.1.
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+          <div class="span3 screenshot">
+            <img src="{{baseURL}}/static/img/nodejs.org.png" alt="nodejs.org" />
+          </div>
+          <div class="span9">
+            <h2>Node.js</h2>
+            <p>
+              Officially, Kanso supports the latest <em>stable</em> version of node.js.
+              However, the v0.6.x releases have a
+              <a href="https://github.com/joyent/node/issues/2257">bug</a> preventing 
+              Kanso exiting after some commands. Until this issue is fixed it's
+              recommended you use the v0.4.x series of releases.
+            </p>
+            <p>
+              Get Node.js at <a href="http://nodejs.org">nodejs.org</a>
+            </p>
+            <h4>Why does Kanso need node.js?</h4>
+            <p>
+              Node.js is used for the command-line tools only. With Kanso, the end
+              result is a pure <a href="http://couchapp.org">CouchApp</a> you can host
+              using CouchDB alone. Using node to write the associated tools allows us
+              to do some powerful things by interpreting the JavaScript of your
+              application.
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+          <div class="span3 screenshot">
+            <img src="{{baseURL}}/static/img/kanso_tools.png" alt="Kanso Tools" />
+          </div>
+          <div class="span9">
+            <h2>Kanso Tools</h2>
+            <p>
+              First, clone the Kanso repository from GitHub:
+            </p>
+              <pre>git clone git://github.com/kanso/kanso.git
+cd kanso</pre>
+            <p>
+              Then, you can fetch it's dependencies and install by doing:
+            </p>
+            <pre>make &amp;&amp; sudo make install</pre>
+          </div>
+        </div>
+
+        <hr />
+        <div class="row">
+          <div class="span3">&nbsp;</div>
+          <div class="span9">
+            <p>
+              <strong>Next: </strong> <a href="http://kan.so/docs">Start creating your own Kanso app!</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="sidebar" class="span4">
+        <h4>Get started</h4>
+        <ul>
+          <li><a rel="external" href="{{baseURL}}/tools">Install Kanso tools</a></li>
+          <li><a rel="external" href="http://kan.so/docs/">Get started creating apps</a></li>
+          <li><a rel="external" href="http://kan.so/docs/Publishing_Packages">Share code with the community</a></li>
+          <li><a rel="external" href="{{baseURL}}/packages">Browse the package repository</a></li>
+          <li><a rel="external" href="http://github.com/kanso/kanso">Watch the project on GitHub</a></li>
+        </ul>
+
+        <h4>Learn more</h4>
+        <ul>
+          <li><a href="http://groups.google.com/group/kanso">Ask the mailing list</a></li>
+          <li><a href="http://twitter.com/caolan">Follow @caolan on Twitter</a></li>
+          <li>#kansojs on FreeNode</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
