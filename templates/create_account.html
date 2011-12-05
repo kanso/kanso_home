@@ -1,0 +1,49 @@
+<div id="secondbar">
+  <div class="container">
+    <div class="row">
+      <div class="span10">
+        <h1>Create account</h1>
+        <p>
+          Enter details into the form below to create a new account
+        </p>
+      </div>
+      <div class="span6">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="content">
+    <div class="row">
+
+      <div class="span3">
+        <div id="gravatar" class="avatar">
+          {{#if avatar}}
+            <img src="{{avatar}}" />
+          {{else}}
+            <p>Enter an email address to preview your Gravatar</p>
+          {{/if}}
+        </div>
+      </div>
+
+      <div class="span9">
+        <div class="page_body">
+          <form id="create_account_form" action="" method="POST">
+            <input type="hidden" name="next" value="{{next}}" />
+            {{{form}}}
+            <div class="actions">
+              <input class="btn" type="reset" value="Clear" />
+              <input class="btn primary" type="submit" value="Sign up" />
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="sidebar" class="span4">
+        <p>This account can be used for editing and commenting on documentation, as well as sharing packages via the kan.so repository.</p>
+      </div>
+
+    </div>
+  </div>
+</div>

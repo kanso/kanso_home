@@ -19,7 +19,7 @@
     "duality-contrib-session": {
         "signup": {
             "text": "Create account",
-            "url": "/create_account/"
+            "url": "/create_account"
         }
     },
     "dependencies": {
@@ -32,6 +32,9 @@
         "handlebars-helpers": null,
         "duality-handlebars": null,
         "less-precompiler": ">=1.1.5",
-        "duality-contrib-session-hb": null
+        "duality-contrib-session-hb": null,
+        "gravatar": null,
+        "users": null,
+        "couchtypes": null
     }
 }
