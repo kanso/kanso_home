@@ -9,8 +9,8 @@
     <div id="topbar">
       <img id="logo" src="{{baseURL}}/static/img/kanso_topbar_logo.png" alt="Kanso" />
       <ul id="topnav">
-        <li class="active"><a href="/">Home</a></li>
-        <li><a href="{{baseURL}}/tools">Tools</a></li>
+        <li id="home_nav_link" {{#ifequal navpage "home"}} class="active"{{/ifequal}}><a href="{{baseURL}}/">Home</a></li>
+        <li id="tools_nav_link" {{#ifequal navpage "tools"}} class="active"{{/ifequal}}><a href="{{baseURL}}/tools">Tools</a></li>
         <li><a rel="external" href="/packages">Packages</a></li>
         <li><a rel="external" href="/docs">Docs</a></li>
         <li><a href="https://github.com/kanso/kanso">Source</a></li>
