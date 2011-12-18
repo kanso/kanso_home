@@ -23,9 +23,7 @@
           <span>Kanso is the best way to create</span>
           <span>and share apps on CouchDB.</span>
         </h1>
-        <p>
-          When the cloud isn't there, your app will be
-        </p>
+        <a href="{{baseURL}}/install" class="btn primary">Get started with Kanso</a>
       </div>
       <div class="span6">
       </div>
@@ -47,22 +45,36 @@
         <div class="row">
           <div class="span6">
             <ul class="features">
-              <li class="scalability"><strong>Scalability:</strong> easily grow from hobby-project to high-demand app with CouchDB</li>
-              <li class="deployment"><strong>Deployment:</strong> effortless to deploy, to the cloud or local machines, promoting quick iterations</li>
+              <li class="offline"><strong>Offline capability:</strong> when the cloud's not there, your app will be</li>
               <li class="multi_platform"><strong>Multi-platform:</strong> runs anywhere with CouchDB (Windows, OSX, Linux, Android and iOS)</li>
+              <li class="deployment"><strong>Deployment:</strong> effortless to deploy, to the cloud or local machines, promoting quick iterations</li>
               <li class="your_data"><strong>Keep your data yours:</strong> now you can keep sensitive data in-house, and avoid sharing it with cloud services</li>
             </ul>
           </div>
           <div class="span6">
             <ul class="features">
+              <li class="realtime"><strong>Real-time:</strong> add live updates using the CouchDB changes feed</li>
+              <li class="scalability"><strong>Scalability:</strong> easily grow from hobby-project to high-demand app with CouchDB</li>
               <li class="distribute"><strong>Easy to distribute:</strong> apps are easy to share and distribute, between people and servers</li>
-              <li class="lockin"><strong>Avoid lock-in:</strong> easy to deploy and based on open-source, don't be held hostage to a proprietary API</li>
-              <li class="homogeneity"><strong>Homogeneity:</strong> your development environment matches your production environment</li>
               <li class="one_language"><strong>One language to rule them all:</strong> with just CouchDB and the browser, all you need to speak is JavaScript!</li>
             </ul>
           </div>
         </div>
 
+        <h2>Browse the package repository</h2>
+        <p>
+          Kanso can be described as the <strong>NPM for CouchApps</strong>,
+          with tools for installing and publishing shared packages while managing
+          dependencies. The Kanso community provides reusable build-tools, modules,
+          templates and more via the online repository. Kanso's built around a
+          powerful packaging system, meaning almost all the functionality can be
+          customized by you.
+        </p>
+        <p>
+          <a rel="external" href="/packages">Explore available packages</a>
+        </p>
+
+        <!--
         <h2>Get started</h2>
         <p>
           Fetch the code from GitHub and install:
@@ -73,6 +85,7 @@ make &amp;&amp; sudo make install</pre>
         <p>
           Learn more: <a rel="external" href="http://kan.so/docs/Simplest_possible_app">Simplest possible app</a>
         </p>
+        -->
 
         <h2>Developer community</h2>
         <p>
@@ -95,7 +108,7 @@ make &amp;&amp; sudo make install</pre>
       <div id="sidebar" class="span4">
         <h4>Get started</h4>
         <ul>
-          <li><a rel="external" href="{{baseURL}}/tools">Install Kanso tools</a></li>
+          <li><a rel="external" href="{{baseURL}}/install">Install Kanso tools</a></li>
           <li><a rel="external" href="http://kan.so/docs/">Get started creating apps</a></li>
           <li><a rel="external" href="http://kan.so/docs/Publishing_Packages">Share code with the community</a></li>
           <li><a rel="external" href="{{baseURL}}/packages">Browse the package repository</a></li>

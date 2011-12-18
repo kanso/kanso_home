@@ -22,6 +22,12 @@ ul.features li {
     background-position: 0 4px;
 }
 
+ul.features li.offline {
+    background-image: url(../img/feature_icons/offline.png);
+}
+ul.features li.realtime {
+    background-image: url(../img/feature_icons/realtime.png);
+}
 ul.features li.scalability {
     background-image: url(../img/feature_icons/scalability.png);
 }
@@ -264,9 +270,9 @@ ul.features li.real_time {
 .tri13 { transform: rotate(-250.3deg); }
 
 .screenshots {
-    position: absolute;
+    position: relative;
     top: 0;
-    left:0;
+    left: 500px;
 }
 .screenshots img {
     position: relative;
@@ -275,11 +281,13 @@ ul.features li.real_time {
     box-shadow: 0 0 20px rgba(15, 15, 15, 1);
 }
 .screenshots .screen1 {
-    left: 510px;
+    position: absolute;
+    left: 10px;
     top: 0;
 }
 .screenshots .screen2 {
-    left: 360px;
+    position: absolute;
+    left: 150px;
     top: 30px;
 }
 
@@ -288,8 +296,12 @@ ul.features li.real_time {
     -moz-box-shadow: inset 0 -5px 10px rgba(0,0,0,0.1);
     box-shadow: inset 0 -5px 10px rgba(0,0,0,0.1);
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 232px;
+    height: 10px;
+}
+
+.homepage .primary {
+    font-size: 15px;
 }
