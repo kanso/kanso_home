@@ -120,3 +120,176 @@ ul.features li.real_time {
 #create_account_form .error {
     color: red;
 }
+
+.homepage_heading {
+    margin: 21px 0 55px 0;
+    text-shadow: none;
+}
+.homepage_heading h1 span {
+    display: inline-block;
+    background: rgba(29,29,29,0.95);
+    color: white;
+    padding: 0px 10px 10px 10px;
+}
+.homepage_heading h1 span:first-child {
+    padding: 10px;
+}
+.homepage_heading .span10 {
+    margin-left: 0;
+}
+.homepage_heading p {
+    font-size: 17px;
+    color: rgba(29,29,29,1);
+}
+
+#secondbar.homepage {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+#secondbar.homepage .row {
+    position: relative;
+}
+
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to { 
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+#secondbar.homepage .span10 {
+    position: relative;
+}
+.starburst_container {
+    position: absolute;
+    top: 200px;
+    left: 720px;
+}
+.starburst {
+    opacity: 0.9;
+    position: relative;
+    width: 5000px;
+    height: 4000px;
+    -webkit-transform-origin: 0 0;
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         1400s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function:  linear;
+    /*
+    too jerky in FF
+    -moz-transform-origin: 0 0;
+    -moz-animation-name:             rotate; 
+    -moz-animation-duration:         1000s; 
+    -moz-animation-iteration-count:  infinite;
+    -moz-animation-timing-function:  linear;
+    */
+    transform-origin: 0 0;
+    animation-name:             rotate; 
+    animation-duration:         1000s; 
+    animation-iteration-count:  infinite;
+    animation-timing-function:  linear;
+}
+.triangle {
+    position: absolute;
+    top: -4000px;
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    border-color: transparent transparent #BD0000 transparent;
+    border-style: solid;
+    border-width: 3000px 1000px 1000px 3000px;
+    /*-webkit-border-image: url(../img/ricepaper.png) 485 485 round;*/
+    width: 0;
+    height: 0;
+}
+.tri1 { -webkit-transform: rotate(82deg); }
+.tri2 { -webkit-transform: rotate(54.3deg); }
+.tri3 { -webkit-transform: rotate(26.6deg); }
+.tri4 { -webkit-transform: rotate(-1.1deg); }
+.tri5 { -webkit-transform: rotate(-28.8deg); }
+.tri6 { -webkit-transform: rotate(-56.5deg); }
+.tri7 { -webkit-transform: rotate(-84.2deg); }
+.tri8 { -webkit-transform: rotate(-111.8deg); }
+.tri9 { -webkit-transform: rotate(-139.5deg); }
+.tri10 { -webkit-transform: rotate(-167.2deg); }
+.tri11 { -webkit-transform: rotate(-194.9deg); }
+.tri12 { -webkit-transform: rotate(-222.6deg); }
+.tri13 { -webkit-transform: rotate(-250.3deg); }
+
+.tri1 { -moz-transform: rotate(82deg); }
+.tri2 { -moz-transform: rotate(54.3deg); }
+.tri3 { -moz-transform: rotate(26.6deg); }
+.tri4 { -moz-transform: rotate(-1.1deg); }
+.tri5 { -moz-transform: rotate(-28.8deg); }
+.tri6 { -moz-transform: rotate(-56.5deg); }
+.tri7 { -moz-transform: rotate(-84.2deg); }
+.tri8 { -moz-transform: rotate(-111.8deg); }
+.tri9 { -moz-transform: rotate(-139.5deg); }
+.tri10 { -moz-transform: rotate(-167.2deg); }
+.tri11 { -moz-transform: rotate(-194.9deg); }
+.tri12 { -moz-transform: rotate(-222.6deg); }
+.tri13 { -moz-transform: rotate(-250.3deg); }
+
+.tri1 { transform: rotate(82deg); }
+.tri2 { transform: rotate(54.3deg); }
+.tri3 { transform: rotate(26.6deg); }
+.tri4 { transform: rotate(-1.1deg); }
+.tri5 { transform: rotate(-28.8deg); }
+.tri6 { transform: rotate(-56.5deg); }
+.tri7 { transform: rotate(-84.2deg); }
+.tri8 { transform: rotate(-111.8deg); }
+.tri9 { transform: rotate(-139.5deg); }
+.tri10 { transform: rotate(-167.2deg); }
+.tri11 { transform: rotate(-194.9deg); }
+.tri12 { transform: rotate(-222.6deg); }
+.tri13 { transform: rotate(-250.3deg); }
+
+.screenshots {
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.screenshots img {
+    position: relative;
+    -webkit-box-shadow: 0 0 20px rgba(15, 15, 15, 1);
+    -moz-box-shadow: 0 0 20px rgba(15, 15, 15, 1);
+    box-shadow: 0 0 20px rgba(15, 15, 15, 1);
+}
+.screenshots .screen1 {
+    left: 510px;
+    top: 0;
+}
+.screenshots .screen2 {
+    left: 360px;
+    top: 30px;
+}
+
+#sbshadow {
+    -webkit-box-shadow: inset 0 -5px 10px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 -5px 10px rgba(0,0,0,0.1);
+    box-shadow: inset 0 -5px 10px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 232px;
+}
