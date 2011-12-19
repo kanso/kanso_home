@@ -21,8 +21,11 @@
 
 
         <ol class="steps">
-          <li>
-            <h2>CouchDB</h2>
+          <li class="step">
+            <h2><span>Step 1.</span> Install CouchDB</h2>
+            <span class="skip">
+              <a href="#">Skip this step</a>
+            </span>
             <div class="row">
               <div class="span3 screenshot">
                 <a href="http://couchdb.org">
@@ -31,26 +34,51 @@
               </div>
               <div class="span8">
                 <div class="instructions">
+                  <h4>Installing on Mac OSX</h4>
+                  <pre>brew install couchdb</pre>
+
+                  <h4>Installing on Ubuntu</h4>
                   <p>
-                    Since Kanso apps run on CouchDB, you'll need to have CouchDB installed.
-                    It is <strong>strongly recommended</strong> you have at least CouchDB
-                    v1.1. There were significant improvements introduced in that release
-                    for Kanso apps, and many packages will not even work on earlier versions.
+                    <strong>Warning:</strong> The version of CouchDB available in
+                    the Ubuntu repositories is now quite old. If possible, try
+                    installing from source using
+                    <a href="https://github.com/iriscouch/build-couchdb">build-couchdb</a>
+                    or the
+                    <a href="http://wiki.apache.org/couchdb/Installing_on_Ubuntu">instructions</a>
+                    on the CouchDB wiki.
                   </p>
+                  <pre>sudo apt-get install couchdb</pre>
+
+                  <h4>Windows Installer</h4>
                   <p>
-                    Get CouchDB at <a href="http://couchdb.org">couchdb.org</a>
+                    <strong>Note:</strong> Kanso is not yet officially supported on
+                    Windows, though some people have had success getting it to run
+                    with Cygwin.
                   </p>
+                  <ul>
+                    <li><a href="https://github.com/downloads/dch/couchdb/setup-couchdb-1.1.1_js185_otp_R14B03+fix-win32-crypto.exe">CouchDB 1.1.1 Installer</a></li>
+                    <li><a href="https://github.com/dch/couchdb/downloads">More download options</a></li>
+                  </ul>
+
+                  <h4>Compile from source</h4>
                   <p>
-                    <strong>Note:</strong> Couchbase Single Server 1.1 is
-                    <strong>not</strong> based on Apache CouchDB v1.1.
+                    For help compiling on your system, see the <a href="http://wiki.apache.org/couchdb/Installation">CouchDB Wiki</a>.
                   </p>
+                  <ul>
+                    <li><a href="https://github.com/iriscouch/build-couchdb">Easy build script</a></li>
+                    <li><a href="http://couchdb.apache.org/downloads.html">Offical download</a></li>
+                  </ul>
+
                 </div>
               </div>
             </div>
           </li>
 
-          <li>
-            <h2>Node.js</h2>
+          <li class="step">
+            <h2><span>Step 2.</span> Install Node.js</h2>
+            <span class="skip">
+              <a href="#">Skip this step</a>
+            </span>
             <div class="row">
               <div class="span3 screenshot">
                 <a href="http://nodejs.org">
@@ -82,7 +110,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="step">
             <h2>Kanso command-line</h2>
             <div class="row">
               <div class="span3 screenshot">
@@ -104,7 +132,7 @@ cd kanso</pre>
             </div>
           </li>
 
-          <li>
+          <li class="step">
             <h2>Get started</h2>
             <div class="row">
               <div class="span5">
