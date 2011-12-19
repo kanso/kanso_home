@@ -4,7 +4,7 @@
       <div class="span10">
         <h1>Installation</h1>
         <p>
-          Instructions on getting up and running with Kanso's command-line tools
+          Instructions on getting up and running with Kanso's command-line
         </p>
       </div>
       <div class="span6">
@@ -18,90 +18,108 @@
     <div class="row">
 
       <div class="span12">
-        <div class="row">
-          <div class="span3 screenshot">
-            <a href="http://couchdb.org">
-              <img src="{{baseURL}}/static/img/couchdb.org.png" alt="couchdb.org" />
-            </a>
-          </div>
-          <div class="span9">
+
+
+        <ol class="steps">
+          <li>
             <h2>CouchDB</h2>
-            <p>
-              Since Kanso apps run on CouchDB, you'll need to have CouchDB installed.
-              It is <strong>strongly recommended</strong> you have at least CouchDB
-              v1.1. There were significant improvements introduced in that release
-              for Kanso apps, and many packages will not even work on earlier versions.
-            </p>
-            <p>
-              Get CouchDB at <a href="http://couchdb.org">couchdb.org</a>
-            </p>
-            <p>
-              <strong>Note:</strong> Couchbase Single Server 1.1 is
-              <strong>not</strong> based on Apache CouchDB v1.1.
-            </p>
-          </div>
-        </div>
+            <div class="row">
+              <div class="span3 screenshot">
+                <a href="http://couchdb.org">
+                  <img src="{{baseURL}}/static/img/couchdb-logo.png" alt="CouchDB Logo" />
+                </a>
+              </div>
+              <div class="span8">
+                <div class="instructions">
+                  <p>
+                    Since Kanso apps run on CouchDB, you'll need to have CouchDB installed.
+                    It is <strong>strongly recommended</strong> you have at least CouchDB
+                    v1.1. There were significant improvements introduced in that release
+                    for Kanso apps, and many packages will not even work on earlier versions.
+                  </p>
+                  <p>
+                    Get CouchDB at <a href="http://couchdb.org">couchdb.org</a>
+                  </p>
+                  <p>
+                    <strong>Note:</strong> Couchbase Single Server 1.1 is
+                    <strong>not</strong> based on Apache CouchDB v1.1.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
 
-        <hr />
-
-        <div class="row">
-          <div class="span3 screenshot">
-            <a href="http://nodejs.org">
-              <img src="{{baseURL}}/static/img/nodejs.org.png" alt="nodejs.org" />
-            </a>
-          </div>
-          <div class="span9">
+          <li>
             <h2>Node.js</h2>
-            <p>
-              Officially, Kanso supports the latest <em>stable</em> version of node.js.
-              However, the v0.6.x releases have a
-              <a href="https://github.com/joyent/node/issues/2257">bug</a> preventing 
-              Kanso exiting after some commands. Until this issue is fixed it's
-              recommended you use the v0.4.x series.
-            </p>
-            <p>
-              Get Node.js at <a href="http://nodejs.org">nodejs.org</a>
-            </p>
-            <h4>Why does Kanso need node.js?</h4>
-            <p>
-              Node.js is used for the command-line tools only. With Kanso, the end
-              result is a pure <a href="http://couchapp.org">CouchApp</a> you can host
-              using CouchDB alone. Using node to write the associated tools allows us
-              to do some powerful things by interpreting the JavaScript of your
-              application.
-            </p>
-          </div>
-        </div>
+            <div class="row">
+              <div class="span3 screenshot">
+                <a href="http://nodejs.org">
+                  <img src="{{baseURL}}/static/img/nodejs-logo.png" alt="Node.js Logo" />
+                </a>
+              </div>
+              <div class="span8">
+                <div class="instructions">
+                  <p>
+                    Officially, Kanso supports the latest <em>stable</em> version of node.js.
+                    However, the v0.6.x releases have a
+                    <a href="https://github.com/joyent/node/issues/2257">bug</a> preventing 
+                    Kanso exiting after some commands. Until this issue is fixed it's
+                    recommended you use the v0.4.x series.
+                  </p>
+                  <p>
+                    Get Node.js at <a href="http://nodejs.org">nodejs.org</a>
+                  </p>
+                  <h4>Why does Kanso need node.js?</h4>
+                  <p>
+                    Node.js is used for the command-line tools only. With Kanso, the end
+                    result is a pure <a href="http://couchapp.org">CouchApp</a> you can host
+                    using CouchDB alone. Using node to write the associated tools allows us
+                    to do some powerful things by interpreting the JavaScript of your
+                    application.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
 
-        <hr />
-
-        <div class="row">
-          <div class="span3 screenshot">
-            <img src="{{baseURL}}/static/img/kanso_tools.png" alt="Kanso Tools" />
-          </div>
-          <div class="span9">
-            <h2>Kanso Tools</h2>
-            <p>
-              First, clone the Kanso repository from GitHub:
-            </p>
-              <pre>git clone git://github.com/kanso/kanso.git
+          <li>
+            <h2>Kanso command-line</h2>
+            <div class="row">
+              <div class="span3 screenshot">
+                <img src="{{baseURL}}/static/img/kanso-logo.png" alt="Kanso Logo" />
+              </div>
+              <div class="span8">
+                <div class="instructions">
+                  <p>
+                    First, clone the Kanso repository from GitHub:
+                  </p>
+                    <pre>git clone git://github.com/kanso/kanso.git
 cd kanso</pre>
-            <p>
-              Then, you can fetch it's dependencies and install by doing:
-            </p>
-            <pre>make &amp;&amp; sudo make install</pre>
-          </div>
-        </div>
+                  <p>
+                    Then, you can fetch it's dependencies and install by doing:
+                  </p>
+                  <pre>make &amp;&amp; sudo make install</pre>
+                </div>
+              </div>
+            </div>
+          </li>
 
-        <hr />
-        <div class="row">
-          <div class="span3">&nbsp;</div>
-          <div class="span9">
-            <p>
-              <strong>Next: </strong> <a rel="external" href="http://kan.so/docs">Start creating your own Kanso app!</a>
-            </p>
-          </div>
-        </div>
+          <li>
+            <h2>Get started</h2>
+            <div class="row">
+              <div class="span5">
+                <a class="btn" href="#">
+                  <img width="200" src="{{baseURL}}/static/img/backbone.png" alt="Backbone.js" />
+                </a>
+              </div>
+              <div class="span5">
+                <a class="btn" href="#">Get started "Framework-Free"</a>
+              </div>
+            </div>
+          </li>
+
+        </ol>
+
       </div>
 
       <div id="sidebar" class="span4">
