@@ -23,9 +23,6 @@
         <ol class="steps">
           <li class="step">
             <h2><span>Step 1.</span> Install CouchDB</h2>
-            <span class="skip">
-              <a href="#">Skip this step</a>
-            </span>
             <div class="row">
               <div class="span3 screenshot">
                 <a href="http://couchdb.org">
@@ -35,6 +32,12 @@
               <div class="span8">
                 <div class="instructions">
                   <h4>Installing on Mac OSX</h4>
+                  <p>
+                    <strong>Warning:</strong> Some people have found the Homebrew install to have broken regular
+                    expressions, use
+                    <a href="https://github.com/iriscouch/build-couchdb">build-couchdb</a>
+                    if you have problems.
+                  </p>
                   <pre>brew install couchdb</pre>
 
                   <h4>Installing on Ubuntu</h4>
@@ -76,9 +79,6 @@
 
           <li class="step">
             <h2><span>Step 2.</span> Install Node.js</h2>
-            <span class="skip">
-              <a href="#">Skip this step</a>
-            </span>
             <div class="row">
               <div class="span3 screenshot">
                 <a href="http://nodejs.org">
@@ -89,21 +89,22 @@
                 <div class="instructions">
                   <p>
                     Officially, Kanso supports the latest <em>stable</em> version of node.js.
-                    However, the v0.6.x releases have a
+                    However, the early v0.6.x releases have a
                     <a href="https://github.com/joyent/node/issues/2257">bug</a> preventing 
-                    Kanso exiting after some commands. Until this issue is fixed it's
-                    recommended you use the v0.4.x series.
-                  </p>
-                  <p>
-                    Get Node.js at <a href="http://nodejs.org">nodejs.org</a>
+                    Kanso exiting after some commands. For this reason it's
+                    recommended you use <strong>v0.6.6 or later</strong> or
+                    the v0.4.x series.
                   </p>
                   <h4>Why does Kanso need node.js?</h4>
                   <p>
                     Node.js is used for the command-line tools only. With Kanso, the end
-                    result is a pure <a href="http://couchapp.org">CouchApp</a> you can host
+                    result is a <a href="http://couchapp.org">pure CouchApp</a> you can host
                     using CouchDB alone. Using node to write the associated tools allows us
                     to do some powerful things by interpreting the JavaScript of your
                     application.
+                  </p>
+                  <p>
+                    <a class="btn" href="http://nodejs.org">Get Node.js</a>
                   </p>
                 </div>
               </div>
@@ -111,7 +112,7 @@
           </li>
 
           <li class="step">
-            <h2>Kanso command-line</h2>
+            <h2><span>Step 3.</span> Install Kanso command-line</h2>
             <div class="row">
               <div class="span3 screenshot">
                 <img src="{{baseURL}}/static/img/kanso-logo.png" alt="Kanso Logo" />
@@ -132,8 +133,9 @@ cd kanso</pre>
             </div>
           </li>
 
+          <!--
           <li class="step">
-            <h2>Get started</h2>
+            <h2><span>Step 4.</span> Get started</h2>
             <div class="row">
               <div class="span5">
                 <a class="btn" href="#">
@@ -145,8 +147,11 @@ cd kanso</pre>
               </div>
             </div>
           </li>
+          -->
 
         </ol>
+
+        <p>Next: <a href="http://kan.so/docs/Simplest_possible_app">Simplest possible app</a></p>
 
       </div>
 
