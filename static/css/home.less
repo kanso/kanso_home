@@ -158,6 +158,7 @@ ul.features li.real_time {
     position: relative;
 }
 
+/*
 @-moz-keyframes rotate {
     from {
         -moz-transform: rotate(0deg);
@@ -182,6 +183,7 @@ ul.features li.real_time {
         transform: rotate(360deg);
     }
 }
+*/
 #secondbar.homepage .span10 {
     position: relative;
 }
@@ -195,11 +197,13 @@ ul.features li.real_time {
     position: relative;
     width: 5000px;
     height: 4000px;
+    /*
     -webkit-transform-origin: 0 0;
     -webkit-animation-name:             rotate; 
     -webkit-animation-duration:         1400s; 
     -webkit-animation-iteration-count:  infinite;
     -webkit-animation-timing-function:  linear;
+    */
     /*
     too jerky in FF
     -moz-transform-origin: 0 0;
@@ -208,12 +212,23 @@ ul.features li.real_time {
     -moz-animation-iteration-count:  infinite;
     -moz-animation-timing-function:  linear;
     */
+    /*
     transform-origin: 0 0;
     animation-name:             rotate; 
     animation-duration:         1000s; 
     animation-iteration-count:  infinite;
     animation-timing-function:  linear;
+    */
 }
+/* Don't animate on mobile devices */
+/*
+@media only screen and (max-device-width: 480px) {
+    .starburst {
+        -webkit-animation-name: none; 
+        animation-name: none; 
+    }
+}
+*/
 .triangle {
     position: absolute;
     top: -4000px;
